@@ -2,8 +2,6 @@
 #ifndef CASQBCRYPTSIMH
 #define CASQBCRYPTSIMH
 
-#pragma once
-
 #include <string>
 
 //---------------------------------------------------------------------------
