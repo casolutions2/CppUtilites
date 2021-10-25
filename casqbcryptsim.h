@@ -2,6 +2,7 @@
 #ifndef CASQBCRYPTSIMH
 #define CASQBCRYPTSIMH
 
+#include <cstdint>
 #include <string>
 
 //---------------------------------------------------------------------------
@@ -28,7 +29,7 @@ namespace casq {
       // compare plaintxt with encrypted hash
       bool Compare( const char* plain, const char* hash );
     
-      unsigned char GetCost() const { return m_cost };
+      unsigned char GetCost() const { return m_cost; };
       const std::string GetLastSalt() const { return m_salt; };
       const std::string GetLastHash() const { return m_hash; };
     
